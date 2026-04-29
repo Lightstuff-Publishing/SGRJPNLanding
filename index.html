@@ -94,7 +94,7 @@ body { font-family:'Noto Serif JP',serif; font-weight:300; line-height:1.85; }
 
 html, body { margin:0; padding:0; background: linear-gradient(155deg,#2a2d52 0%,#32366a 60%,#2c3060 100%); !important; }
 .lp-s2 { background: linear-gradient(155deg,#2a2d52 0%,#32366a 60%,#2c3060 100%);; padding:80px 72px; }
-.lp-compare-cards { display:grid; grid-template-columns:1fr 1fr; gap:3px; background:rgba(220,180,90,.12); margin-top:44px; }
+.lp-compare-cards { display:grid; grid-template-columns:1fr 1fr; gap:3px; background:rgba(220,180,90,.20); margin-top:44px; }
 .lp-ed-card { padding:44px 40px; display:flex; flex-direction:column; gap:18px; }
 .lp-ed-card.full    { background:#1e2248; border-top:3px solid #c49a20; }
 .lp-ed-card.summary { background:#1a1e44; border-top:3px solid #3a7a9c; }
@@ -144,10 +144,10 @@ html, body { margin:0; padding:0; background: linear-gradient(155deg,#2a2d52 0%,
 .lp-quote-text { font-family:'Cormorant Garamond',serif; font-style:italic; font-size:clamp(19px,2.6vw,30px); color:#f8f2e4; max-width:660px; margin:0 auto 12px; line-height:1.6; }
 .lp-quote-source { font-family:'Noto Sans JP',sans-serif; font-size:12px; color:#a09070; letter-spacing:.1em; }
 /* contents grid */
-.lp-contents-grid { display:grid; grid-template-columns:1fr 1fr; gap:3px; background:rgba(220,180,90,.12); margin-top:44px; }
-.lp-col { padding:36px 32px; }
+.lp-contents-grid { display:grid; grid-template-columns:1fr 1fr; gap:3px; background:rgba(220,180,90,.20); margin-top:44px; }
+.lp-col { padding:36px 32px; background:#2e3268; }
 .lp-col.full    { background:#1e2248; }
-.lp-col.summary { background:#1a1e44; }
+.lp-col.summary { background:#283070; }
 .lp-col-header { display:flex; align-items:center; gap:12px; margin-bottom:24px; }
 .lp-col-dot { width:10px; height:10px; border-radius:50%; flex-shrink:0; }
 .lp-col.full    .lp-col-dot { background:#c49a20; }
@@ -179,7 +179,7 @@ html, body { margin:0; padding:0; background: linear-gradient(155deg,#2a2d52 0%,
 
 html, body { margin:0; padding:0; background: linear-gradient(155deg,#2a2d52 0%,#32366a 60%,#2c3060 100%); !important; }
 .lp-s4 { background: linear-gradient(155deg,#2a2d52 0%,#32366a 60%,#2c3060 100%);; padding:80px 72px; }
-.lp-pr-grid { display:grid; grid-template-columns:1fr 1fr; gap:2px; background:rgba(220,180,90,.12); margin-top:44px; }
+.lp-pr-grid { display:grid; grid-template-columns:1fr 1fr; gap:2px; background:rgba(220,180,90,.20); margin-top:44px; }
 .lp-pr { background:#1e2248; padding:28px 30px; display:flex; gap:20px; align-items:flex-start; transition:background .25s; }
 .lp-pr:hover { background:#1e2248; }
 .lp-pr-num { font-family:'Cormorant Garamond',serif; font-size:13px; font-style:italic; color:#c8a030; opacity:.85; min-width:22px; padding-top:3px; flex-shrink:0; }
@@ -212,9 +212,7 @@ html, body { margin:0; padding:0; background: linear-gradient(155deg,#2a2d52 0%,
   margin:0 auto 24px; position:relative;
 }
 .lp-bq-text::before {
-  content:'❝'; font-family:'Cormorant Garamond',serif;
-  font-size:70px; color:rgba(220,180,90,.25);
-  position:absolute; top:-22px; left:-14px; line-height:1;
+  content:'';
 }
 .lp-bq-hl { color:#f0d060; }
 .lp-bq-source { font-family:'Noto Sans JP',sans-serif; font-size:13px; color:rgba(220,210,180,.7); letter-spacing:.1em; }
@@ -235,9 +233,9 @@ html, body { margin:0; padding:0; background: linear-gradient(155deg,#2a2d52 0%,
   margin:0 auto;
   padding:0 72px;
 }
-.lp-editor-role { font-family:'Noto Sans JP',sans-serif; font-size:11px; letter-spacing:.2em; color:#d4a830; margin-bottom:6px; }
-.lp-editor-name { font-size:19px; font-weight:700; color:#f8f2e4; margin-bottom:12px; }
-.lp-editor-bio { font-family:'Noto Sans JP',sans-serif; font-size:13.5px; color:#c8cce8; line-height:2; max-width:720px; }
+.lp-editor-role { font-family:'Noto Sans JP',sans-serif; font-size:11px; letter-spacing:.2em; color:#d4a830; margin-bottom:6px; text-align:left; }
+.lp-editor-name { font-size:19px; font-weight:700; color:#f8f2e4; margin-bottom:12px; text-align:left; }
+.lp-editor-bio { font-family:'Noto Sans JP',sans-serif; font-size:13.5px; color:#c8cce8; line-height:2; text-align:left; }
 @media(max-width:700px){
   .lp-bq { padding:56px 24px; }
   .lp-author { padding:56px 24px; }
